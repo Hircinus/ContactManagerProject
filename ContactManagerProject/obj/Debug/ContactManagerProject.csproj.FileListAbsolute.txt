@@ -1,0 +1,16 @@
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.exe.config
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.exe
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.pdb
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.AssemblyReference.cache
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\MainWindow.g.cs
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\App.g.cs
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject_MarkupCompile.cache
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject_MarkupCompile.lref
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\MainWindow.baml
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.g.resources
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.Properties.Resources.resources
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.GenerateResource.cache
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.CoreCompileInputs.cache
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.exe
+C:\Users\nneji\source\repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.pdb
