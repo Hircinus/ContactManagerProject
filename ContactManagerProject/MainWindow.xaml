@@ -12,7 +12,6 @@
             <Button DockPanel.Dock="Top">Top</Button>
             <Button DockPanel.Dock="Right">Right</Button>
             <Button DockPanel.Dock="Bottom">Bottom</Button>
-            <Button>
                 <ListBox>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -32,7 +31,6 @@
                         </Grid.RowDefinitions>
                     </Grid>
                 </ListBox>
-            </Button>
         </DockPanel>
     </Grid>
 </Window>
