@@ -5,16 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactManagerProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="800">
     <Grid>
         <DockPanel>
-            <Button DockPanel.Dock="Left">Left</Button>
-            <Button DockPanel.Dock="Top">Top</Button>
-            <Button DockPanel.Dock="Right">Right</Button>
-            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Border DockPanel.Dock="Left" Width="30"></Border>
+            <Border DockPanel.Dock="Top" Width="30"></Border>
+            <Border DockPanel.Dock="Right" Width="30"></Border>
+            <Border DockPanel.Dock="Bottom" Width="30"></Border>
                 <ListBox>
                     <Grid>
-                        <Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="203"/>
+                    </Grid.ColumnDefinitions>
+                        
+                    <Grid.RowDefinitions>
                             <RowDefinition Height="10"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="10"/>
@@ -29,7 +41,8 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="10"/>
                         </Grid.RowDefinitions>
-                    </Grid>
+                    
+                </Grid>
                 </ListBox>
         </DockPanel>
     </Grid>
