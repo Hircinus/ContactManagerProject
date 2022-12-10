@@ -5,10 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactManagerProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-        <Grid x:Name="Grid" Loaded="Grid_Loaded">
-            
-        </Grid>
-    </ScrollViewer>
+        Title="MainWindow" Height="650" Width="800">
+    <Grid>
+        <DockPanel>
+            <Border DockPanel.Dock="Left" Width="30"></Border>
+            <Border DockPanel.Dock="Top" Width="30"></Border>
+            <Border DockPanel.Dock="Right" Width="30"></Border>
+            <Border DockPanel.Dock="Bottom" Width="30"></Border>
+                <ListBox>
+                    <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="203"/>
+                    </Grid.ColumnDefinitions>
+                        
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                    
+                </Grid>
+                </ListBox>
+        </DockPanel>
+    </Grid>
 </Window>

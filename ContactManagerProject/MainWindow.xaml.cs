@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,12 @@ namespace ContactManagerProject
     {
         public MainWindow()
         {
-            InitializeComponent();
+            var ConString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(ConString))
+            { 
+                con.Open();
+            }
+                InitializeComponent();
         }
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
