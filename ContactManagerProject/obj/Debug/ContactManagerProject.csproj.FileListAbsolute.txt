@@ -1,0 +1,15 @@
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.exe.config
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.exe
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\bin\Debug\ContactManagerProject.pdb
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.AssemblyReference.cache
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\MainWindow.g.cs
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\App.g.cs
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject_MarkupCompile.cache
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject_MarkupCompile.lref
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\MainWindow.baml
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.g.resources
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.Properties.Resources.resources
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.GenerateResource.cache
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.csproj.CoreCompileInputs.cache
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.exe
+C:\Users\Jake\Source\Repos\ContactManagerProject\ContactManagerProject\obj\Debug\ContactManagerProject.pdb

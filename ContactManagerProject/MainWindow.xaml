@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:ContactManagerProject"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="Grid" Loaded="Grid_Loaded">
+            
+        </Grid>
+    </ScrollViewer>
 </Window>

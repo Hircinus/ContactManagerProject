@@ -24,5 +24,12 @@ namespace ContactManagerProject
         {
             InitializeComponent();
         }
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            for(int i = 0; i<5; i++)
+            {
+                Grid.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+        }
     }
 }
