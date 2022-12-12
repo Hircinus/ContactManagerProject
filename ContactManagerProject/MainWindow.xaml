@@ -13,36 +13,7 @@
             <Border DockPanel.Dock="Right" Width="30"></Border>
             <Border DockPanel.Dock="Bottom" Width="30"></Border>
                 <ListBox>
-                    <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="250"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="95"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="95"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="95"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="203"/>
-                    </Grid.ColumnDefinitions>
-                        
-                    <Grid.RowDefinitions>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="10"/>
-                        </Grid.RowDefinitions>
                     
-                </Grid>
                 </ListBox>
         </DockPanel>
     </Grid>
