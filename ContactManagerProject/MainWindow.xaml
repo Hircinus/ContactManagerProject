@@ -23,7 +23,7 @@
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
-                        <GridViewColumn Header="Last Name" Width="50" DisplayMemberBinding="{Binding lastName}" />
+                        <GridViewColumn Header="Last Name" Width="120" DisplayMemberBinding="{Binding lastName}" />
                         <GridViewColumn Header="E-Mail" Width="150" DisplayMemberBinding="{Binding email}" />
                     </GridView>
                 </ListView.View>
