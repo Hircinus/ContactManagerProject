@@ -40,9 +40,9 @@ namespace ContactManagerProject
                 DetailsWindow newWindow = new DetailsWindow(selectedContact.ID);
                 newwindow.ShowDialog(); //
             }
-                contacts = DBH.getContacts();
-                ContactsListItems.ItemsSource = contacts;
-            }
+            contacts = DBH.getContacts();
+            ContactsListItems.ItemsSource = contacts;
+        }
 
         private void Add_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
