@@ -28,7 +28,7 @@
             <Label x:Name="F_Name" Content="First Name:" Margin="87,50,181,175" FontFamily="Bahnschrift Light"/>
         </Grid>
         <Button x:Name="Add_Contact" Content="Add Contact" HorizontalAlignment="Left" Margin="26,275,0,0" VerticalAlignment="Top" Height="85" Width="144" FontFamily="Bahnschrift Light" Click="Add_Contact_Click"/>
-        <ListBox x:Name="lstContact" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="292,15,25,15" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="lstContact" Margin="292,15,25,15" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2" SelectionChanged="lstContact_SelectionChanged"/>
 
     </Grid>
 </Window>
