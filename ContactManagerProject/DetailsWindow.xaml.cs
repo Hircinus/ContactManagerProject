@@ -21,9 +21,14 @@ namespace ContactManagerProject
     /// </summary>
     public partial class DetailsWindow : Window
     {
-        public DetailsWindow(int Id)
+        ContactsBinding cb;
+        public DetailsWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
+
+            //DBHelper dbh = DBHelper.GetInstance;
+
+            //cb = dbh.getContactsDetails(Id);
 
             var ConString = ConfigurationManager.ConnectionStrings["ContactsDatabase"].ConnectionString;
             using (SqlConnection con = new SqlConnection(ConString))

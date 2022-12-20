@@ -21,7 +21,7 @@ namespace ContactManagerProject
     {
         public AddContact()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         private void Add_Contact_Click(object sender, RoutedEventArgs e)
