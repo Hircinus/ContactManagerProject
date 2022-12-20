@@ -38,7 +38,7 @@ namespace ContactManagerProject
             if (selectedContact != null)
             {
                 DetailsWindow newWindow = new DetailsWindow(selectedContact.ID);
-                newwindow.ShowDialog(); //
+                newWindow.ShowDialog(); //
             }
                 contacts = DBH.getContacts();
                 ContactsListItems.ItemsSource = contacts;
