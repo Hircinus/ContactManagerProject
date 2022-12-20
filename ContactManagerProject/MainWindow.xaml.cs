@@ -26,12 +26,17 @@ namespace ContactManagerProject
         public MainWindow()
         {
             InitializeComponent();
-
+            
+        }
+        public List<Contact> GetContacts()
+        {
+            List<Contact> arr = new List<Contact>();
             var ConString = ConfigurationManager.ConnectionStrings["ContactsDatabase"].ConnectionString;
             using (SqlConnection con = new SqlConnection(ConString))
-            { 
+            {
                 int Id;
-                string Title, FirstName, LastName, MiddleName, Gender, CreationDate, UpdateDate, Active;
+                string Title, FirstName, LastName, MiddleName, CreationDate, UpdateDate;
+                Boolean Gender, Active;
                 string query = @"SELECT * FROM Contact";
                 //define the SqlCommand object
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -55,13 +60,12 @@ namespace ContactManagerProject
                         FirstName = dr.GetString(2);
                         LastName = dr.GetString(3);
                         MiddleName = dr.GetString(4);
-                        Gender = dr.GetString(5);
+                        Gender = dr.GetBoolean(5);
                         CreationDate = dr.GetString(6);
                         UpdateDate = dr.GetString(7);
-                        Active = dr.GetString(8);
+                        Active = dr.GetBoolean(8);
 
-                        //display retrieved record
-                        Console.WriteLine("{0},{1},{2},{3},{4},{5},{6},{7},{8}", Id.ToString(), Title, FirstName, LastName, MiddleName, Gender, CreationDate, UpdateDate, Active);
+                        arr.Add(new Contact(Id, Title, FirstName, LastName, MiddleName, Gender, CreationDate, UpdateDate, Active));
                     }
                 }
                 else
@@ -75,9 +79,8 @@ namespace ContactManagerProject
                 //close connection
                 con.Close();
             }
-            
+            return arr;
         }
-
         private void ContactsListItems_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             ContactsBinding selectedContact = (ContactsBinding)ContactsListItems.SelectedItem;
