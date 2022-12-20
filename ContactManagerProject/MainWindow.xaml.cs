@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -116,7 +117,36 @@ namespace ContactManagerProject
 
         private void Ex_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
+            List<ContactDetail> contacts = DB.DB.GetContactsAll();
+            String seperator = ",";
 
+            StringBuilder output = new StringBuilder();
+            String[] headings = { "Id", "FirstName", "MiddleName", "LastName", "Salutation", "Address", "CodeAddress", "AddressDescription", "Email", "CodeEmail", "EmailDescription", "Phone", "CodePhone", "PhoneDescription" };
+            output.AppendLine(String.Join(seperator, headings));
+
+            foreach (var contact in contacts)
+            {
+                String[] row = { contact.Id.ToString(), contact.FirstName, contact.MiddleName, contact.LastName, contact.Salutation, contact.Address, contact.CodeAddress, contact.AddressDescription, contact.Email, contact.CodeEmail, contact.EmailDescription, contact.Phone, contact.CodePhone, contact.PhoneDescription };
+
+                output.AppendLine(String.Join(seperator, row));
+            }
+
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "csv file | *.csv";
+                saveFileDialog.Title = "EXPORT CONTACTS TO CSV";
+                saveFileDialog.ShowDialog();
+                if (saveFileDialog.FileName != String.Empty)
+                {
+                    //System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
+                    File.AppendAllText(saveFileDialog.FileName, output.ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("The file could not be created");
+            }
         }
     }
 }

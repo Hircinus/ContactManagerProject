@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="Add_Contact" Height="450" Width="800">
     <Grid>
-        
+        <Grid x:Name="g2" HorizontalAlignment="Left" Height="261" Margin="28,38,0,0" VerticalAlignment="Top" Width="287">
+            <Label x:Name="F_Name" Content="First Name:" HorizontalAlignment="Left" Margin="0,17,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="L_Name" Content="Last Name:" HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Width="74"/>
+            <Label x:Name="P_Number" Content="Phone Number:" Margin="0,90,181,133"/>
+            <TextBox HorizontalAlignment="Left" Margin="75,21,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="202"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="75,52,10,188"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="96,90,10,152"/>
+        </Grid>
+        <ListBox x:Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,21,67,42"/>
+        <Button x:Name="Add_Button" Content="Add Contact" HorizontalAlignment="Left" Margin="72,320,0,0" VerticalAlignment="Top" Width="140" Height="72"/>
+
     </Grid>
 </Window>
