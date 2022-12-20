@@ -101,7 +101,7 @@ namespace ContactManagerProject
 
         private void Edit_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void Del_Contact_btn_Click(object sender, RoutedEventArgs e)
@@ -116,7 +116,7 @@ namespace ContactManagerProject
 
         private void Ex_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-
+             
         }
     }
 }
