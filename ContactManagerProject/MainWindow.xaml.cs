@@ -96,7 +96,7 @@ namespace ContactManagerProject
 
         private void Add_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            AddContact addWindow = new AddContact();
+            Add_Contact addWindow = new Add_Contact();
             addWindow.Show();
         }
 

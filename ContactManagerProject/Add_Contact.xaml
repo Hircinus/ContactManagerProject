@@ -16,7 +16,7 @@
             <TextBox TextWrapping="Wrap" Text="TextBox" Margin="96,90,10,152"/>
         </Grid>
         <ListBox x:Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,21,67,42"/>
-        <Button x:Name="Add_Button" Content="Add Contact" HorizontalAlignment="Left" Margin="72,320,0,0" VerticalAlignment="Top" Width="140" Height="72"/>
+        <Button x:Name="Add_Button" Content="Add Contact" HorizontalAlignment="Left" Margin="72,320,0,0" VerticalAlignment="Top" Width="140" Height="72" Click="Add_Button_Click"/>
 
     </Grid>
 </Window>
