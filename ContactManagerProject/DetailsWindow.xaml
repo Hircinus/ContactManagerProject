@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactManagerProject"
         mc:Ignorable="d"
-        Title="DetailsWindow" Height="450" Width="640">
-    <Viewbox HorizontalAlignment="Left" Height="106" Margin="98,33,0,0" VerticalAlignment="Top" Width="100">
-        <Label Content="Label" x:Name="NameHolder" />
-    </Viewbox>
+        Title="DetailsWindow" Height="400" Width="400">
+    <Label x:Name="NameHolder"></Label>
+    <!--
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0"  Content="Name:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0"  Content="Middle Name:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0"  Content="Last Name:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0"  Content="Email:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0"  Content="Address:" HorizontalAlignment="left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="7" Grid.Column="0"  Content="Phone:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="fName" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBlock x:Name="mName" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding MiddleName}" VerticalAlignment="Center" Width="120"/>
+        <TextBlock x:Name="lName" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Center" Width="120"/>
+        <TextBlock x:Name="e_mail" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding EmailName}" VerticalAlignment="Center" Width="200"/>
+        <TextBlock x:Name="address" Grid.Row="5" HorizontalAlignment="Left"  Margin="109,10,0,0" TextWrapping="Wrap" Text="{Binding WHoleAddress}" VerticalAlignment="Top" Width="262" Height="48" Grid.RowSpan="2"/>
+
+
+        <TextBlock x:Name="phoneNb" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding PhoneNumber}" VerticalAlignment="Center" Width="120"/>
+
+
+
+
+    </Grid>
+    -->
 </Window>

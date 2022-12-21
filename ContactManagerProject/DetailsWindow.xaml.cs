@@ -21,14 +21,12 @@ namespace ContactManagerProject
     /// </summary>
     public partial class DetailsWindow : Window
     {
-        ContactsBinding cb;
         public DetailsWindow(Contact c)
         {
             InitializeComponent();
 
-            NameHolder.Content = $"{c.Title} {c.FirstName} {c.MiddleName} {c.LastName}";
+            NameHolder.Content = c.FirstName;
         }
 
-        
     }
 }
