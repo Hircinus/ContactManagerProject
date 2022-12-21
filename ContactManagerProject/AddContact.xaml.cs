@@ -24,9 +24,15 @@ namespace ContactManagerProject
             //InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void Add_Contact_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }

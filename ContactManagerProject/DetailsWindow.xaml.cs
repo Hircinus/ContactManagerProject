@@ -34,5 +34,10 @@ namespace ContactManagerProject
             using (SqlConnection con = new SqlConnection(ConString))
             { con.Open(); }
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
