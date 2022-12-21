@@ -24,7 +24,7 @@ namespace ContactManagerProject
         ContactsBinding cb;
         public DetailsWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
 
             //DBHelper dbh = DBHelper.GetInstance;
 

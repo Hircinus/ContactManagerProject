@@ -101,22 +101,18 @@ namespace ContactManagerProject
 
         private void Edit_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            
+            EditContact editWindow = new EditContact();
+            editWindow.Show();
         }
 
         private void Del_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Imp_Contact_btn_Click(object sender, RoutedEventArgs e)
-        {
-
+            DeleteContact deleteWindow = new DeleteContact();
         }
 
         private void Ex_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-             
+            
         }
     }
 }

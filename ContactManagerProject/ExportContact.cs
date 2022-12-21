@@ -10,9 +10,9 @@ namespace ContactManagerProject
 {
     internal class ExportContact
     {
-        private void Export_Contact_Click(object sender, RoutedEventArgs e)
+        public void Export_Contact_Click(object sender, RoutedEventArgs e)
         {
-            List<Contact> contacts = DB.DB.GetContactsAll();
+            List<Contact> contacts = DB.DB.GetContacts();
             String seperator = ",";
 
             StringBuilder output = new StringBuilder();

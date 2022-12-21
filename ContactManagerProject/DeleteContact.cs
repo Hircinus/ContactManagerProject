@@ -14,12 +14,9 @@ using System.Windows.Shapes;
 
 namespace ContactManagerProject
 {
-    /// <summary>
-    /// Interaction logic for AddContact.xaml
-    /// </summary>
-    public partial class AddContact : Window
+    public partial class DeleteContact : Window
     {
-        public AddContact()
+        public DeleteContact()
         {
             InitializeComponent();
         }
@@ -29,10 +26,9 @@ namespace ContactManagerProject
             throw new NotImplementedException();
         }
 
-        private void Add_Contact_Click(object sender, RoutedEventArgs e)
+        private void Delete_Contact_btn(object sender, RoutedEventArgs e)
         {
 
         }
-
     }
 }
