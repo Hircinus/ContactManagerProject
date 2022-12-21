@@ -22,13 +22,13 @@ namespace ContactManagerProject
     public partial class DetailsWindow : Window
     {
         ContactsBinding cb;
-        public DetailsWindow()
+        public DetailsWindow(int Id)
         {
             //InitializeComponent();
 
             //DBHelper dbh = DBHelper.GetInstance;
 
-            //cb = dbh.getContactsDetails(Id);
+            //cb = new DB().getContactsDetails(Id);
 
             var ConString = ConfigurationManager.ConnectionStrings["ContactsDatabase"].ConnectionString;
             using (SqlConnection con = new SqlConnection(ConString))
