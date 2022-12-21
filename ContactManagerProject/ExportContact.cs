@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace ContactManagerProject
     {
         public void Export_Contact_Click(object sender, RoutedEventArgs e)
         {
-            List<Contact> contacts = DB.DB.GetContacts();
+            //List<Contact> contacts = DB.DB.GetContactsAll();
             String seperator = ",";
 
             StringBuilder output = new StringBuilder();
@@ -21,7 +22,7 @@ namespace ContactManagerProject
 
             foreach (var contact in contacts)
             {
-                String[] row = { contact.Id.ToString(), contact.Title, contact.FirstName, contact.LastName, contact.MiddleName, contact.Gender, contact.CreationDate, contact.UpdateDate, contact.Active };
+                String[] row = { contact.Id.ToString(), contact.Title, contact.FirstName, contact.LastName, contact.MiddleName, contact.Gender.ToString(), contact.CreationDate, contact.UpdateDate, contact.Active.ToString() };
 
                 output.AppendLine(String.Join(seperator, row));
             }

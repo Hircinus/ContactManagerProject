@@ -12,19 +12,12 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
-            <ListView Name="ContactsListItems" MouseDoubleClick="ContactsListItems_MouseDoubleClick">
-                <ListView.View>
+            <ListView Name="ContactsListItems" MouseDoubleClick="ContactsListItems_MouseDoubleClick"><ListView.View>
                     <GridView>
-                        <GridViewColumn Header="First Name" Width="120">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding firstName}" Foreground="Blue"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                        <GridViewColumn Header="Last Name" Width="120" DisplayMemberBinding="{Binding lastName}" />
-                        <GridViewColumn Header="E-Mail" Width="150" DisplayMemberBinding="{Binding email}" />
-                        <GridViewColumn Header="Phone Number" Width="150" DisplayMemberBinding="{Binding phoneNum}" />
+						<GridViewColumn Header="Title" Width="120" DisplayMemberBinding="{Binding Title}" />
+                        <GridViewColumn Header="First Name" Width="120" DisplayMemberBinding="{Binding FirstName}" />
+                        <GridViewColumn Header="Middle Name" Width="150" DisplayMemberBinding="{Binding MiddleName}" />
+                        <GridViewColumn Header="Last Name" Width="150" DisplayMemberBinding="{Binding LastName}" />
                     </GridView>
                 </ListView.View>
                 <!--<ListView.ItemTemplate>
@@ -34,6 +27,13 @@
 34 </WrapPanel>
 35 </DataTemplate>
 36 </ListView.ItemTemplate>-->
+				<!--
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding FirstName}" />
+					</DataTemplate>
+				</ListView.ItemTemplate>
+				-->
             </ListView>
         </ScrollViewer>
         <Button Name="Add_Contact_btn" Grid.Row="1" Margin="10,10,490,10" Content="Add Contact..." Click="Add_Contact_btn_Click" />

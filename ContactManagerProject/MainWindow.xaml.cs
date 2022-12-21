@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -26,76 +27,24 @@ namespace ContactManagerProject
         public MainWindow()
         {
             InitializeComponent();
-            
+            ContactsListItems.ItemsSource = new DB().GetContacts();
+
         }
-        public List<Contact> GetContacts()
-        {
-            List<Contact> arr = new List<Contact>();
-            var ConString = ConfigurationManager.ConnectionStrings["ContactsDatabase"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(ConString))
-            {
-                int Id;
-                string Title, FirstName, LastName, MiddleName, CreationDate, UpdateDate;
-                Boolean Gender, Active;
-                string query = @"SELECT * FROM Contact";
-                //define the SqlCommand object
-                SqlCommand cmd = new SqlCommand(query, con);
-
-                //open connection
-                con.Open();
-
-                //execute the SQLCommand
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                Console.WriteLine(Environment.NewLine + "Retrieving data from database..." + Environment.NewLine);
-                Console.WriteLine("Retrieved records:");
-
-                //check if there are records
-                if (dr.HasRows)
-                {
-                    while (dr.Read())
-                    {
-                        Id = dr.GetInt32(0);
-                        Title = dr.GetString(1);
-                        FirstName = dr.GetString(2);
-                        LastName = dr.GetString(3);
-                        MiddleName = dr.GetString(4);
-                        Gender = dr.GetBoolean(5);
-                        CreationDate = dr.GetString(6);
-                        UpdateDate = dr.GetString(7);
-                        Active = dr.GetBoolean(8);
-
-                        arr.Add(new Contact(Id, Title, FirstName, LastName, MiddleName, Gender, CreationDate, UpdateDate, Active));
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("No data found.");
-                }
-
-                //close data reader
-                dr.Close();
-
-                //close connection
-                con.Close();
-            }
-            return arr;
-        }
+        
         private void ContactsListItems_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            ContactsBinding selectedContact = (ContactsBinding)ContactsListItems.SelectedItem;
+            Contact selectedContact = (Contact)ContactsListItems.SelectedItem;
             if (selectedContact != null)
             {
-                DetailsWindow newWindow = new DetailsWindow();
+                DetailsWindow newWindow = new DetailsWindow(selectedContact);
                 newWindow.ShowDialog(); //
             }
-            //contacts = DBH.getContacts();
-            //ContactsListItems.ItemsSource = contacts;
+            ContactsListItems.ItemsSource = new DB().GetContacts();
         }
 
         private void Add_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            AddContact addWindow = new AddContact();
+            Add_Contact addWindow = new Add_Contact();
             addWindow.Show();
         }
 
@@ -107,12 +56,14 @@ namespace ContactManagerProject
 
         private void Del_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            DeleteContact deleteWindow = new DeleteContact();
+
         }
+
+
 
         private void Ex_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            
+             
         }
     }
 }
