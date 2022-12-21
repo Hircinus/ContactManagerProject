@@ -8,15 +8,15 @@ namespace ContactManagerProject
 {
     public class Contact
     {
-        int Id { get; set; }
-        String Title { get; set; }
-        String FirstName { get; set; }
-        String LastName { get; set; }
-        String MiddleName { get; set; }
-        Boolean Gender { get; set; }
-        String CreationDate { get; set; }
-        String UpdateDate { get; set; }
-        Boolean Active { get; set; }
+        public int Id { get; set; }
+        public String Title { get; set; }
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+        public String MiddleName { get; set; }
+        public Boolean Gender { get; set; }
+        public String CreationDate { get; set; }
+        public String UpdateDate { get; set; }
+        public Boolean Active { get; set; }
 
         public Contact(int id, string title, string firstName, string lastName, string middleName, bool gender, string creationDate, string updateDate, bool active)
         {

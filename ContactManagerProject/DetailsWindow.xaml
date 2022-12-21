@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactManagerProject"
         mc:Ignorable="d"
-        Title="DetailsWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="DetailsWindow" Height="450" Width="640">
+    <Viewbox HorizontalAlignment="Left" Height="106" Margin="98,33,0,0" VerticalAlignment="Top" Width="100">
+        <Label Content="Label" x:Name="NameHolder" />
+    </Viewbox>
 </Window>
