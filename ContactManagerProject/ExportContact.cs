@@ -11,9 +11,9 @@ namespace ContactManagerProject
 {
     internal class ExportContact
     {
-        private void Export_Contact_Click(object sender, RoutedEventArgs e)
+        public void Export_Contact_Click(object sender, RoutedEventArgs e)
         {
-            List<Contact> contacts = new DB().GetContacts();
+            //List<Contact> contacts = DB.DB.GetContactsAll();
             String seperator = ",";
 
             StringBuilder output = new StringBuilder();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -43,29 +44,22 @@ namespace ContactManagerProject
 
         private void Add_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            AddContact addWindow = new AddContact();
+            Add_Contact addWindow = new Add_Contact();
             addWindow.Show();
         }
 
         private void Edit_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            
+            EditContact editWindow = new EditContact();
+            editWindow.Show();
         }
 
         private void Del_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            Contact selectedContact = (Contact)ContactsListItems.SelectedItem;
-            if (selectedContact != null)
-            {
-                new DB().Delete(selectedContact.Id, selectedContact.Active);
-            }
-            ContactsListItems.ItemsSource = new DB().GetContacts();
-        }
-
-        private void Imp_Contact_btn_Click(object sender, RoutedEventArgs e)
-        {
 
         }
+
+
 
         private void Ex_Contact_btn_Click(object sender, RoutedEventArgs e)
         {

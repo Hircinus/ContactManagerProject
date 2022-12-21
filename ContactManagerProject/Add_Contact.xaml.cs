@@ -15,24 +15,18 @@ using System.Windows.Shapes;
 namespace ContactManagerProject
 {
     /// <summary>
-    /// Interaction logic for AddContact.xaml
+    /// Interaction logic for Add_Contact.xaml
     /// </summary>
-    public partial class EditContact : Window
+    public partial class Add_Contact : Window
     {
-        public EditContact()
+        public Add_Contact()
         {
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Edit_Contact_btn(object sender, RoutedEventArgs e)
+        private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
     }
 }
