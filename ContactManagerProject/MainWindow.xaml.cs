@@ -44,7 +44,7 @@ namespace ContactManagerProject
 
         private void Add_Contact_btn_Click(object sender, RoutedEventArgs e)
         {
-            Add_Contact addWindow = new Add_Contact();
+            AddContact addWindow = new AddContact();
             addWindow.Show();
         }
 
