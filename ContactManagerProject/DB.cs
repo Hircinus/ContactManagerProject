@@ -10,13 +10,13 @@ namespace ContactManagerProject
 {
     public class DB
     {
-        public void Delete(Contact c)
+        public void Delete(int Id, bool Active)
         {
             var ConString = ConfigurationManager.ConnectionStrings["ContactsDatabase"].ConnectionString;
             using (SqlConnection con = new SqlConnection(ConString))
             {
                 con.Open();
-                string query = @"UPDATE Contact SET active = " + !c.Active + " WHERE Id = " + c.Id;
+                string query = @"UPDATE Contact SET active = " + !Active + " WHERE Id = " + Id;
                 //define the SqlCommand object
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {

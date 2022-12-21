@@ -35,7 +35,7 @@ namespace ContactManagerProject
             Contact selectedContact = (Contact)ContactsListItems.SelectedItem;
             if (selectedContact != null)
             {
-                DetailsWindow newWindow = new DetailsWindow(selectedContact.Id);
+                DetailsWindow newWindow = new DetailsWindow(selectedContact);
                 newWindow.ShowDialog(); //
             }
             ContactsListItems.ItemsSource = new DB().GetContacts();
@@ -57,7 +57,7 @@ namespace ContactManagerProject
             Contact selectedContact = (Contact)ContactsListItems.SelectedItem;
             if (selectedContact != null)
             {
-                new DB().Delete(selectedContact);
+                new DB().Delete(selectedContact.Id, selectedContact.Active);
             }
             ContactsListItems.ItemsSource = new DB().GetContacts();
         }
